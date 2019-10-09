@@ -42,7 +42,7 @@ export class LoginPage implements OnInit {
       { type: 'pattern', message: 'Por favor digite um email válido.' }
     ],
     'password': [
-      { type: 'required', message: 'Senha é obrigatório.' },
+      { type: 'required', message: 'Senha é obrigatória.' },
       { type: 'minlength', message: 'Senha deve possuir no minimo 5 caracteres.' }
     ]
   };
@@ -52,7 +52,7 @@ export class LoginPage implements OnInit {
     .then(res => {
       console.log(res);
       this.errorMessage = "";
-      this.navCtrl.navigateForward('/dashboard');
+      this.navCtrl.navigateForward('/profile');
     }, err => {
       console.log(err);
       switch (err.code) {

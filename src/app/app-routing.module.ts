@@ -12,6 +12,8 @@ const routes: Routes = [
   { path: 'product', loadChildren: './pages/product/product.module#ProductPageModule' },
   { path: 'professional', loadChildren: './pages/professional/professional.module#ProfessionalPageModule' },
   { path: 'client', loadChildren: './pages/client/client.module#ClientPageModule' },
+  { path: 'edit-profile', loadChildren: './pages/edit-profile/edit-profile.module#EditProfilePageModule' },
+  { path: 'profile', loadChildren: './pages/profile/profile.module#ProfilePageModule' },
 ];
 
 @NgModule({
